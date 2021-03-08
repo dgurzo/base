@@ -52,3 +52,6 @@ The figure below illustrates this behavior using an example.
 - The project was forked on the **7th of March, 2021**.
 - ***dgurzo*** GitHub user forked the repo
 - in order to complete *Systems Engineering Lab 1, MIT1 laboratory*
+
+- branch-A merge conflict
+

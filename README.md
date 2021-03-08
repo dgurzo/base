@@ -53,5 +53,5 @@ The figure below illustrates this behavior using an example.
 - ***dgurzo*** GitHub user forked the repo
 - in order to complete *Systems Engineering Lab 1, MIT1 laboratory*
 
-- branch-A merge conflict
+- branch merge conflict
 

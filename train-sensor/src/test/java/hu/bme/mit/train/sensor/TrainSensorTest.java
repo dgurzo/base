@@ -25,4 +25,23 @@ public class TrainSensorTest {
         sensor.overrideSpeedLimit(501);
         verify(user, times(1)).setAlarmState(true);
     }
+
+    @Test
+    public void SpeedLimitUnder0() {
+        sensor.overrideSpeedLimit(-1);
+        verify(user, times(1)).setAlarmState(true);
+    }
+
+    @Test
+    public void SpeedLimitDrop() {
+        sensor.overrideSpeedLimit(100);
+        sensor.overrideSpeedLimit(10);
+        verify(user, times(1)).setAlarmState(true);
+    }
+
+    @Test
+    public void SpeedLimitGood() {
+        sensor.overrideSpeedLimit(50);
+        verify(user, times(0)).setAlarmState(true);
+    }
 }

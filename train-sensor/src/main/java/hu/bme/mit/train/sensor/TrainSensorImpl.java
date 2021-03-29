@@ -32,7 +32,6 @@ public class TrainSensorImpl implements TrainSensor {
 
 	@Override
 	public boolean isDoorOpen() {
-		if(controller.getReferenceSpeed() > speedLimit) return true;
-		else return false;
+		return controller.getReferenceSpeed() > speedLimit;
 	}
 }
